@@ -1,19 +1,43 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# This website is not accessible
+_________________________________________________________________________________________________
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+:postal_horn: Inhoud
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+ * Introductie
+ * Live versie
+ * Talen
+ * Installatie
+ * Licentie
+_________________________________________________________________________________________________
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+:postal_horn: Introductie: Ontwerp en maak een responsive website voor een startup.
 
+Dit is een website die voor de normale gebruiker niet toegankelijk is. Voor mensen die gebruiken maken van een screen reader en of toetsenbord is deze website juist beter geschikt. Dit is om aandacht te geven aan het toegankelijk maken van het web. Het web is voor iedereen dus het moet ook gebruikt kunnen worden door iedereen!
 
-## Licentie
+_________________________________________________________________________________________________
+
+:postal_horn: De live versie is te vinden op: https://knetters.github.io/the-startup-responsive-interactieve-website/
+
+_________________________________________________________________________________________________
+
+:postal_horn: Dit project is gemaakt met de volgende talen:
+
+> :triangular_flag_on_post: HTML<br>
+> :triangular_flag_on_post: CSS<br>
+> :triangular_flag_on_post: JavaScript<br>
+_________________________________________________________________________________________________
+
+:postal_horn: Installatie: Je kan de bestandsmap downloaden of het project clonen; je hoeft verder niks te installeren. Om de website lokaal te bekijken kan je het index.html bestand openen.
+_________________________________________________________________________________________________
+
+:postal_horn: Licentie:
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
 This work is licensed under [GNU GPLv3](./LICENSE).
+
+_________________________________________________________________________________________________
+
+```
+Gemaakt door Thomas.
+```
