@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    overflow: hidden;
+}
+
+.main-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Definieer de linker en de rechter kant van de webpagina -------------------------------------------------- */
+.left-container {
+    width: 40%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    z-index: 10;
+    transition: .2s;
+}
+
+.right-container {
+    width: 60%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: #ccccff;
+    height: 100vh;
+    transition: .2s;
+}
+
+/* Maak de twee containers onbruikbaar -------------------------------------------------- */
+
+/* .right-container:hover, .left-container:hover {
+    background-color: black;
+} */
+
+.inline-container {
+    padding: 1em;
+}
+
+header {
+    width: 100%;
+}
+
+header img {
+    float: left;
+    width: 10%;
+    margin-top: -.3em;
+    margin-right: 1em;
+}
+
+/* Opmaak typographie -------------------------------------------------- */
+h1 {
+    font-size: 8em;
+    line-height: 1em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 12em;
+    margin: 1em 0em 0em 0em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+.label-text {
+    margin-top: 8em;
+    margin-bottom: 0em;
+}
+
+.info-text {
+    width: 50%;
+}
+
+.call-to-action-block {
+    width: 98%;
+    background-color: #9999ff;
+    padding: 1%;
+    border-radius: 10px;
+}
