@@ -23,6 +23,7 @@ html, body {
     height: 100vh;
     z-index: 10;
     transition: .2s;
+    position: relative;
 }
 
 .right-container {
@@ -58,15 +59,20 @@ header img {
 /* Opmaak typographie -------------------------------------------------- */
 h1 {
     font-size: 7em;
-    line-height: 1em;
+    line-height: .9em;
     margin: 0;
     font-weight: 400;
 }
 
 h2 {
-    font-size: 9.4vw;
-    margin: 1em 0em 0em 0em;
+    font-size: 12vw;
+    margin: 0;
+    line-height: .8em;
     font-family: "Rajdhani", Arial, Helvetica, sans-serif;
+}
+
+h2 span {
+    margin-left: 40%;
 }
 
 header p {
@@ -75,12 +81,14 @@ header p {
 }
 
 .label-text {
-    margin-top: 8em;
     margin-bottom: 0em;
+    font-size: 1.5em;
+    font-family: "Rajdhani", Arial, Helvetica, sans-serif;
 }
 
 .info-text {
-    width: 50%;
+    width: 60%;
+    margin-top: -1em;
 }
 
 .call-to-action-block {
@@ -88,6 +96,12 @@ header p {
     background-color: #9999ff;
     padding: 1%;
     border-radius: 10px;
+}
+
+.inner-bottom-content {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 6em;
 }
 
 /* Opmaak van de navigatie */
@@ -104,7 +118,7 @@ li {
 }
 
 li:hover {
-    transform: translateY(1em)
+    padding-top: .5em;
 }
 
 @media only screen and (max-width: 600px) {
