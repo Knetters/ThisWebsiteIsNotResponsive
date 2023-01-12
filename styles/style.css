@@ -46,7 +46,7 @@ main {
 .info-content-block {
     position: absolute;
     bottom: 0;
-    padding: 1em;
+    padding: 1em 15% 1em 1em;
     height: 20vh;
     border-top: 2px solid black;
 }
@@ -68,15 +68,6 @@ main {
     border-top: 2px solid black;
     background-color: #000;
     color: #fff;
-}
-
-/* Definieer de linker en de rechter kant van de webpagina -------------------------------------------------- */
-header {
-    width: 100%;
-    height: 4vh;
-    position:absolute;
-    background-color: transparent;
-    
 }
 
 svg {
