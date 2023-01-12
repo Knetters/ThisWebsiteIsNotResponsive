@@ -201,3 +201,13 @@ button:hover {
     background-color: #000 !important;
     color: #000 !important;
 }
+
+.whiteTitle {
+    color: #fff !important;
+}
+
+.blackTitle {
+    color: #000 !important;
+    background-color: #000 !important;
+}
+
