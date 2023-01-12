@@ -4,39 +4,66 @@
         <title>This website is not accassible.</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/newStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <main>
-            <section class="left-container">
-                <div class="title-block">
-                    <h1>Deze website is niet</h1>
-                    <h2 onclick="toggleDark()">TOEGANKELIJK.</h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 48" role="presentation"><path fill="#000" d="M20.771 25.216c-.263 0-.526-.075-.771-.207L.771 13.965A1.54 1.54 0 0 1 0 12.611c0-.565.301-1.073.771-1.355L20 .212a1.511 1.511 0 0 1 1.543 0L40.77 11.256c.49.282.772.79.772 1.354a1.58 1.58 0 0 1-.772 1.355L21.543 25.01a1.634 1.634 0 0 1-.772.207ZM4.666 12.61l16.105 9.257 16.106-9.257L20.77 3.373 4.666 12.61ZM59.205 47.3c-.263 0-.526-.076-.771-.207L39.205 36.048a1.54 1.54 0 0 1-.771-1.354c0-.565.301-1.073.771-1.355l19.229-11.044a1.512 1.512 0 0 1 1.543 0l19.228 11.044c.49.282.772.79.772 1.355a1.58 1.58 0 0 1-.772 1.354L59.977 47.093a1.578 1.578 0 0 1-.772.207ZM43.1 34.694l16.105 9.257 16.106-9.257-16.106-9.238L43.1 34.694Z"></path><path fill="#000" d="M20.771 47.305c-.263 0-.526-.075-.771-.207L.771 36.054A1.54 1.54 0 0 1 0 34.699V12.611c0-.565.301-1.073.771-1.355a1.546 1.546 0 0 1 1.562 0l17.31 9.934c.715.414 1.58.414 2.295 0L58.458.212a1.511 1.511 0 0 1 1.542 0l19.229 11.044c.489.282.771.79.771 1.354V34.7a1.58 1.58 0 0 1-.771 1.355 1.546 1.546 0 0 1-1.562 0l-17.29-9.935a2.277 2.277 0 0 0-2.296 0L21.56 47.099a1.768 1.768 0 0 1-.79.207ZM3.104 33.795l17.667 10.142L56.52 23.41a5.424 5.424 0 0 1 5.4 0l14.977 8.598V13.514L59.229 3.373 23.48 23.899a5.424 5.424 0 0 1-5.4 0L3.104 15.301v18.495Z"></path></svg>
-                </div>
-                <div class="info-content-block">
-                    <h3>Wat is web toegankelijkheid?</h3>
-                    <p>Webtoegankelijkheid is de praktijk van het ontwerpen van websites die toegankelijk zijn voor zo veel mogelijk gebruikers, waaronder mensen met een beperking. Dit kan om fysieke beperkingen gaan, zoals een slechtziendheid of een motorische beperking, maar ook om mentale beperkingen, zoals dyslexie. Door webtoegankelijkheid toe te passen, kunnen deze gebruikers toch gebruik maken van de website. Hierdoor wordt de website toegankelijker voor een breder publiek.</p>
-                </div>
-            </section>
-            <section class="right-container">
-                <div class="lower-level">
-                    <div class="call-to-action-content-container">
-                        <h3>Call to action</h3>
-                        <p>Word deel van onze campagne voor webtoegankelijkheid en help ons een verschil te maken voor mensen met beperkingen. Door mee te doen, zorgen we samen dat websites voor iedereen toegankelijk zijn.</p>
-                        <button>Doe mee!</button>
+            <section id="start" class="snap">
+                <div class="flex-container">
+                    <div class="flex-items">
+                        <header>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 48" role="presentation"><path fill="#000" d="M20.771 25.216c-.263 0-.526-.075-.771-.207L.771 13.965A1.54 1.54 0 0 1 0 12.611c0-.565.301-1.073.771-1.355L20 .212a1.511 1.511 0 0 1 1.543 0L40.77 11.256c.49.282.772.79.772 1.354a1.58 1.58 0 0 1-.772 1.355L21.543 25.01a1.634 1.634 0 0 1-.772.207ZM4.666 12.61l16.105 9.257 16.106-9.257L20.77 3.373 4.666 12.61ZM59.205 47.3c-.263 0-.526-.076-.771-.207L39.205 36.048a1.54 1.54 0 0 1-.771-1.354c0-.565.301-1.073.771-1.355l19.229-11.044a1.512 1.512 0 0 1 1.543 0l19.228 11.044c.49.282.772.79.772 1.355a1.58 1.58 0 0 1-.772 1.354L59.977 47.093a1.578 1.578 0 0 1-.772.207ZM43.1 34.694l16.105 9.257 16.106-9.257-16.106-9.238L43.1 34.694Z"></path><path fill="#000" d="M20.771 47.305c-.263 0-.526-.075-.771-.207L.771 36.054A1.54 1.54 0 0 1 0 34.699V12.611c0-.565.301-1.073.771-1.355a1.546 1.546 0 0 1 1.562 0l17.31 9.934c.715.414 1.58.414 2.295 0L58.458.212a1.511 1.511 0 0 1 1.542 0l19.229 11.044c.489.282.771.79.771 1.354V34.7a1.58 1.58 0 0 1-.771 1.355 1.546 1.546 0 0 1-1.562 0l-17.29-9.935a2.277 2.277 0 0 0-2.296 0L21.56 47.099a1.768 1.768 0 0 1-.79.207ZM3.104 33.795l17.667 10.142L56.52 23.41a5.424 5.424 0 0 1 5.4 0l14.977 8.598V13.514L59.229 3.373 23.48 23.899a5.424 5.424 0 0 1-5.4 0L3.104 15.301v18.495Z"></path></svg>
+                            <p>DIDGITAL NATIVES</p>
+                        </header>
                     </div>
-                    <div class="motivation-content-block">
-                        <h3>Hoe kan je helpen?</h3>
-                        <p>Laten we samen werken aan een toegankelijker web voor iedereen, zodat iedereen toegang heeft tot informatie en diensten. Dit is niet alleen een kwestie van rechtvaardigheid, maar ook goed voor de samenleving. Doe mee aan de campagne voor toegankelijkheid en laten we er samen voor zorgen dat het web voor iedereen toegankelijk is!</p>
+                    <div class="flex-items">
+                        <h1>Deze website is <span id="boolean" onclick="toggleAccessible()">niet</span> <span class="underline">toegankelijk</span>.</h1>
+                    </div>
+                    <div class="flex-items">
+                        <p><span><i class="fa fa-bullhorn"></i> - Doe mee!</span></p>
+                        <div class="float-container">
+                            <p>Laten we samen werken aan een toegankelijker web voor iedereen.</p>
+                            <p class="right"><i class="fa fa-level-down"></i></p>
+                        </div>
+                    </div>
+                 </div>
+            </section>
+            <section id="info" class="snap">
+                <div class="info-container">
+                    <div class="left-container">
+                        <div class="inner-padding">
+                            <p><span><i class="fa fa-info"></i> - Vraag</span></p>
+                            <h2>Wat is web toegankelijkheid?</h2>
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <div class="inner-padding">
+                            <p><span><i class="fa fa-comment"></i> - Antwoord</span></p>
+                            <br>
+                            <p>Webtoegankelijkheid is de praktijk van het ontwerpen van websites die toegankelijk zijn voor zo veel mogelijk gebruikers, waaronder mensen met een beperking. Dit kan om fysieke beperkingen gaan, zoals een slechtziendheid of een motorische beperking, maar ook om mentale beperkingen, zoals dyslexie. Door webtoegankelijkheid toe te passen, kunnen deze gebruikers toch gebruik maken van de website. Hierdoor wordt de website toegankelijker voor een breder publiek.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="call-to-action">
+                    <div class="inner-padding">
+                        <h2>Doe met ons mee en maak het web voor iedereen!</h2>
+                        <div class="info-container">
+                            <div class="left-container">
+                                <p><span><i class="fa fa-comment"></i> - Antwoord</span></p>
+                                <br>
+                                <p class="bottom-container">Webtoegankelijkheid is de praktijk van het ontwerpen van websites die toegankelijk zijn voor zo veel mogelijk gebruikers, waaronder mensen met een beperking. Dit kan om fysieke beperkingen gaan, zoals een slechtziendheid of een motorische beperking, maar ook om mentale beperkingen, zoals dyslexie. Door webtoegankelijkheid toe te passen, kunnen deze gebruikers toch gebruik maken van de website. Hierdoor wordt de website toegankelijker voor een breder publiek.</p>
+                            </div>
+                            <div class="right-container">
+                                <button>Doe mee!</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-
-        <div class="paperOverlay"></div>
-
         <script src="./scripts/index.js"></script>
     </body>
 </html>
