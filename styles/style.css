@@ -12,65 +12,63 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
     font-size: 1em;
     overflow: hidden;
     position: relative;
 }
 
-/* Grid layout */
-.container { 
+/* Float layout */
+main {
+    width: 100%;
+}
+
+.left-container {
+    float: left;
     height: 100vh;
+    background-color: var(--primary);
+    width: 55%;
+    position: relative;
+}
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.2fr 1.1fr 0.7fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "left-block right-block"
-      "left-block call-to-action-block"
-      "info-block-1 info-block-2";
-  }
+.right-container {
+    float: left;
+    height: 100vh;
+    width: 45%;
+    position: relative;
+}
 
-.container div {
+.title-block {
     padding: 1em;
 }
-  
-  .left-block { 
-    grid-area: left-block;
-    padding-top: 3em !important;
-    background-color: var(--primary);
-    border-bottom: solid black 2px;
+
+/* Blokken in de layout */
+.info-content-block {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    height: 20vh;
+    border-top: 2px solid black;
 }
-  
-  .right-block { 
-    grid-area: right-block;
-    background-color: #fff;
+
+.lower-level {
+    position: absolute;
+    bottom: 0;
+}
+
+.motivation-content-block {
+    padding: 1em;
+    height: 20vh;
+    border-top: 2px solid black;
+}
+
+.call-to-action-content-container {
+    padding: 1em;
     height: 30vh;
-}
-  
-  .call-to-action-block { 
-    grid-area: call-to-action-block;
+    border-top: 2px solid black;
     background-color: #000;
     color: #fff;
-    height: 40vh;
-    font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
 }
-  
-  .info-block-1 { 
-    grid-area: info-block-1;
-    background-color: var(--primary);
-    height: 25vh;
-    font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
-}
-  
-  .info-block-2 { 
-    grid-area: info-block-2;
-    background-color: #fff;
-    height: 25vh;
-    font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
-} 
 
 /* Definieer de linker en de rechter kant van de webpagina -------------------------------------------------- */
 header {
@@ -98,10 +96,14 @@ h1 {
 }
 
 h2 {
-    font-size: 7vw;
+    font-size: 6vw;
     margin: 0;
     line-height: 1em;
     font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
+}
+
+h2:hover {
+    cursor: pointer;
 }
 
 h3 {
@@ -150,6 +152,7 @@ li:hover {
 
 /* Call to action block */
 button {
+    width: 100%;
     padding: 2em;
     margin: 0;
     background-color: #817E9F;
@@ -157,8 +160,6 @@ button {
     transition: .2s;
     font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
     font-size: 1em;
-    position: absolute;
-    bottom: 25vh;
     color: #000;
 }
 
@@ -173,13 +174,23 @@ button:hover {
     }
 
     .left-container {
+        float: left;
+        background-color: var(--primary);
         width: 100%;
+        position: relative;
     }
     
     .right-container {
+        float: left;
         width: 100%;
+        position: relative;
     }
-  }
+}
+
+
+
+
+
 
 /* Paper overlay */
 .paperOverlay {
@@ -193,3 +204,9 @@ button:hover {
     mix-blend-mode: multiply;
     pointer-events: none;
   }
+
+/* Maak de website niet toegankgelijk */
+.dark {
+    background-color: #000 !important;
+    color: #000 !important;
+}
