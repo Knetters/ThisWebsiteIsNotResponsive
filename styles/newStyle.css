@@ -133,6 +133,10 @@ h1 span {
     color: #e25b4c;
 }
 
+h1 span:hover {
+    cursor: pointer;
+}
+
 h2 {
     margin: 0;
     font-size: 4em;
@@ -144,4 +148,16 @@ p {
 
 span {
     color: var(--secondairy);
+}
+
+
+
+
+.dark {
+    background-color: #000 !important;
+    color: #000 !important;
+}
+
+.whietTitle {
+    color: #fff;
 }

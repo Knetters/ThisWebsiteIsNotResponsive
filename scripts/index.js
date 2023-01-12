@@ -8,3 +8,10 @@ function toggleDark() {
     title.classList.toggle("whiteTitle");
     call_to_action,classList.toggle("blackTitle")
 }
+
+function toggleAccessible() {
+    const start = document.querySelector("#start");
+    const title = document.querySelector("h1");
+    start.classList.toggle("dark");
+    title.classList.toggle("whietTitle")
+}
