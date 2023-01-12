@@ -55,6 +55,7 @@ html, body {
     background-color: #000;
     color: #fff;
     height: 40vh;
+    font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
 }
   
   .info-block-1 { 
@@ -69,29 +70,7 @@ html, body {
     background-color: #fff;
     height: 25vh;
     font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
-}
-
-.inner-content {
-    height: 100%;
-    position: relative;
-}
-
-.bottom-content {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    margin-bottom: 22%;
-    width: 100%;
-}
-
-.bottom-content-button {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    margin-bottom: 10%;
-    width: 100%;
-}
-  
+} 
 
 /* Definieer de linker en de rechter kant van de webpagina -------------------------------------------------- */
 header {
@@ -103,7 +82,9 @@ header {
 }
 
 svg {
-    height: 3em;
+    height: 4em;
+    position: absolute;
+    bottom: 25vh;
 }
 
 /* Opmaak typographie -------------------------------------------------- */
@@ -133,6 +114,10 @@ h3 {
     font-size: 2vw;
 }
 
+p {
+    text-align: justify;
+}
+
 /* Opmaak van de navigatie */
 ul {
     list-style: none;
@@ -159,15 +144,22 @@ li:hover {
 }
 
 /* Informatie block */
-
+.info-block-1 p {
+    width: 55em;
+}
 
 /* Call to action block */
 button {
-    width: 96%;
     padding: 2em;
+    margin: 0;
     background-color: #817E9F;
     border: none;
     transition: .2s;
+    font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    position: absolute;
+    bottom: 25vh;
+    color: #000;
 }
 
 button:hover {
