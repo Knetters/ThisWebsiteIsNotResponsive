@@ -118,6 +118,7 @@ html, body {
 svg {
     width: 5%;
     float: left;
+    margin: -1em 2em 0em 0em;
 }
 
 /* Typographie */
