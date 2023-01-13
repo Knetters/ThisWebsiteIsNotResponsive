@@ -1,17 +1,15 @@
-function toggleDark() {
-    const left = document.querySelector(".left-container");
-    const right = document.querySelector(".right-container");
-    const call_to_action = document.querySelector(".call-to-action-content-container");
-    const title = document.querySelector("h2");
-    left.classList.toggle("dark");
-    right.classList.toggle("dark");
-    title.classList.toggle("whiteTitle");
-    call_to_action,classList.toggle("blackTitle")
+function moveOverlay() {
+    //Dit wordt de funtie om de overlay naar beneden te schuiven
+    alert("Overlay weg.")
 }
 
-function toggleAccessible() {
-    const start = document.querySelector("#start");
-    const title = document.querySelector("h1");
-    start.classList.toggle("dark");
-    title.classList.toggle("whietTitle")
-}
+var numbers = document.getElementById("numbers");
+var count = 0;
+setInterval(function() {
+    numbers.innerHTML = count;
+    count++;
+    if (count > 100) {
+        clearInterval();
+        moveOverlay();
+    }
+}, 2000); // 2000 milliseconds = 2 seconds
