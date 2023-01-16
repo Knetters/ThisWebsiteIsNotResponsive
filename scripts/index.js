@@ -1,8 +1,10 @@
 const herstart = document.getElementById("herstart");
 const overlay = document.getElementById("bluescreen");
+const start = document.getElementById("start");
 
 function moveOverlay() {
   //Dit wordt de funtie om de overlay naar beneden te schuiven
+  start.scrollIntoView();
   overlay.classList.toggle("remove");
   clearInterval(intervalId);
 }

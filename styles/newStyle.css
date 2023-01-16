@@ -85,9 +85,23 @@ html, body {
     height: 100vh;
 }
 
+.info-title-block h2 {
+    margin: 0;
+    padding: 0;
+}
+
 .info-container {
     width: 100%;
     height: 50vh;
+}
+
+.inner-info-container {
+    width: 100%;
+}
+
+.inner-info-container .left-container {
+    margin: 0;
+    padding: 2em 0 0 0;
 }
 
 .left-container {
