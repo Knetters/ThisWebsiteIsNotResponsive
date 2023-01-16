@@ -279,4 +279,5 @@ element::-webkit-scrollbar {
 
 .remove {
     margin-top: -100vh;
+    background-color: white;
 }
