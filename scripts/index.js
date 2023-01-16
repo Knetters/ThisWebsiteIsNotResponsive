@@ -4,6 +4,7 @@ const overlay = document.getElementById("bluescreen");
 function moveOverlay() {
   //Dit wordt de funtie om de overlay naar beneden te schuiven
   overlay.classList.toggle("remove");
+  clearInterval(intervalId);
 }
 
 var numbers = document.getElementById("numbers");
