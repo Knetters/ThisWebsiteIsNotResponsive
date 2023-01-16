@@ -205,6 +205,11 @@ element::-webkit-scrollbar {
     background-color: #0078d7;
     color: #fff;
     font-family: "Source Sans Pro";
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    transition: .4s;
 }
 
 .inner-bluescreen {
@@ -215,7 +220,7 @@ element::-webkit-scrollbar {
     font-size: 10em;
 }
 
-#bluescreen p {
+.inner-bluescreen p {
     font-size: 2em;
     width: 60%;
     padding-bottom: 1em;
@@ -238,6 +243,20 @@ element::-webkit-scrollbar {
     margin: 0;
 }
 
+.right-text p {
+    width: 100%;
+    margin-top: -6px;
+}
+
 #bluescreen span {
     color: #fff;
+}
+
+#herstart:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.remove {
+    margin-top: -100vh;
 }

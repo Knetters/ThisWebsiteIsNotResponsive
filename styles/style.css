@@ -178,11 +178,6 @@ button:hover {
     }
 }
 
-
-
-
-
-
 /* Paper overlay */
 .paperOverlay {
     position: absolute;
@@ -210,4 +205,3 @@ button:hover {
     color: #000 !important;
     background-color: #000 !important;
 }
-
