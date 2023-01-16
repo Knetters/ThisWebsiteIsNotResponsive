@@ -1,4 +1,9 @@
 # This website is not accessible
+
+![zeroState](https://user-images.githubusercontent.com/60781257/212734111-baa61deb-cf56-4507-9ec1-36715c323f78.png)
+
+![bluescreen](https://user-images.githubusercontent.com/60781257/212734113-57a18411-7439-4837-9fac-89290433a891.png)
+
 _________________________________________________________________________________________________
 
 :postal_horn: Inhoud
