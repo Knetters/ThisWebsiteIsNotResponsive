@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum Myeongjo:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Source+Sans+Pro:wght@200;300&display=swap');
 
 :root {
@@ -8,7 +9,7 @@
 
     --primaryFont: "Montserrat";
     --secondairyFont: "Nanum Myeongjo";
-    --thirthFont : "Quicksand"
+    --thirthFont: "Quicksand";
 }
 
 html, body {
@@ -328,6 +329,11 @@ element::-webkit-scrollbar {
 
 .inner-bluescreen {
     padding: 8em;
+}
+
+#bluescreen p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
 }
 
 #bluescreen h2 {
