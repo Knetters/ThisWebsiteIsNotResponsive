@@ -6,6 +6,7 @@ function moveOverlay() {
   //Dit wordt de funtie om de overlay naar beneden te schuiven
   start.scrollIntoView();
   overlay.classList.toggle("remove");
+  start.classList.toggle("noBlur")
   clearInterval(intervalId);
 }
 
