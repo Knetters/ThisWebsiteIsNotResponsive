@@ -8,8 +8,6 @@
 
     --primaryFont: "Montserrat";
     --secondairyFont: "Nanum Myeongjo"
-
-    font-size: min(calc(1.3em + 0.05vw), 4em);
 }
 
 html, body {
@@ -99,6 +97,10 @@ html, body {
     width: 100%;
 }
 
+.inner-info-container .right-container{
+    padding-top: 4em;
+}
+
 .inner-info-container .left-container {
     margin: 0;
     padding: 2em 0 0 0;
@@ -145,6 +147,51 @@ html, body {
     border-radius: 10px;
 }
 
+.info-title-container {
+    width: 70%;
+    padding: 0em 0em 4em 0em;
+}
+
+.info-tekst-container {
+    width: 50em;
+}
+
+.tekst-container {
+    height: 50vh;
+    padding-top: 4em;
+}
+
+.blocks {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.lock-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.left-block {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+    background-color: #b3b2c0;
+    border-radius: 10px;
+    height: 30vh;
+    
+}
+
+.right-block {
+    float: left;
+    width: 49%;
+    margin-left: 1%;
+    background-color: #b3b2c0;
+    border-radius: 10px;
+    height: 30vh;
+}
+
 /* Opmaak van de header */
 svg {
     width: 5%;
@@ -170,7 +217,7 @@ h1 span:hover {
 
 h2 {
     margin: 0;
-    font-size: 4em;
+    font-size: 3.5vw;
 }
 
 .call-to-action h2 {
@@ -191,8 +238,21 @@ span {
     color: #000;
 }
 
+.red-underline {
+    text-decoration: underline;
+    text-decoration-color: #e25b4c;
+    color: #000;
+}
+
 .green {
     color: #7de77d;
+}
+
+.green-background {
+    background-color: #7de77d;
+    color: #000;
+    border-radius: 10px;
+    padding: 0em .2em 0em .2em;
 }
 
 .yellow {
@@ -208,6 +268,27 @@ color: #e25b4c;
     color: #fff;
 }
 
+/* Opmaak van de buttons */
+button {
+    padding: 1em;
+    width: 10em;
+    margin-right: 1em;
+    border: none;
+    border-radius: .5em;
+    font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.dark-btn {
+    background-color: #000;
+    color: white;
+    width: 16em;
+}
+
 /* hide scrollbar but allow scrolling */
 element {
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -217,6 +298,10 @@ element {
 
 element::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
+}
+
+.bottom-padding {
+    padding-bottom: 1em;
 }
 
 /* Opmaak van de bluescreen */
@@ -281,3 +366,66 @@ element::-webkit-scrollbar {
     margin-top: -100vh;
     background-color: white;
 }
+
+/* Responsive design */
+@media only screen and (max-width: 1000px) {
+    .left-container {
+        float: left;
+        width: 100%;
+        padding-top: 2em;
+    }
+    
+    .right-container {
+        float: left;
+        width: 100%;
+        padding-top: 2em;
+    }
+
+    #bluescreen.remove {
+        display: none;
+    }
+
+    #bluescreen {
+        font-size: .6em;
+    }
+
+    .arrow-down {
+        display: none !important; 
+    }
+
+    svg {
+        display: none !important; 
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+        height: 100vh;
+        padding: 0em 2em 0em 2em;
+    }
+
+    .inner-padding {
+        padding: 0em 2em 0em 2em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .info-title-container {
+        width: 100%;
+        padding: 0em 0em 4em 0em;
+    }
+    
+    .info-tekst-container {
+        width: 100%;
+    }
+  }
