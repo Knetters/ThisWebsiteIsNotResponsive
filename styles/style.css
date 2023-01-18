@@ -258,6 +258,21 @@ span {
     color: #000;
     border-radius: 10px;
     padding: 0em .2em 0em .2em;
+    /* animation-name: blur; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+    50% {
+        filter: blur(4px);
+    }
+    100% {
+        filter: blur(0px);
+    }
 }
 
 .yellow {
@@ -281,6 +296,7 @@ button {
     border: none;
     border-radius: .5em;
     font-family: var(--primaryFont), Arial, Helvetica, sans-serif;
+    background-color: #fff;
 }
 
 button:hover {
@@ -325,6 +341,7 @@ element::-webkit-scrollbar {
     top: 0;
     width: 100%;
     transition: .4s;
+    transition-timing-function: ease-in-out
 }
 
 .inner-bluescreen {
@@ -386,6 +403,24 @@ element::-webkit-scrollbar {
     background-color: #e1f7e1;
 }
 
+.arrow-down {
+    animation: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0%);
+    }
+    30% {
+        transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
 /* Responsive design */
 @media only screen and (max-width: 1000px) {
     .left-container {
@@ -409,9 +444,9 @@ element::-webkit-scrollbar {
     }
 
     .arrow-down {
-        display: none !important; 
+        display: none !important;
     }
-
+    
     svg {
         display: none !important; 
     }
