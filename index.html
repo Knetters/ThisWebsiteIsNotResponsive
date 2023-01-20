@@ -1,7 +1,10 @@
-<!doctype html>
+<!doctype html lang="nl">
+
+<!-- Icons werken misschien niet overal, tab index over algemeene sections -->
+
 <html>
     <head>
-        <title>This website is not accassible.</title>
+        <title>This website is not accessible.</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,17 +68,21 @@
                 </div>
             </section>
 
+            <!-- Dit kan verborgen worden voor screen reader -->
+
             <!-- Bluescreen section -->
             <section aria-hidden="true" id="bluescreen">
                 <div class="inner-bluescreen">
+
+                    <!-- Geen titel maar tekst -->
                     <h2>:(</h2>
                     <p>Deze website is niet toegankelijk. We verzamelen informatie en starten je browser opnieuw op.</p>
                     <p><span id="numbers">0</span>% Complete</p>
 
                     <div class="qr-code">
-                        <img src="./img/qrCode.png">
+                        <img src="./img/qrCode.png" alt="QR code for the website https://www.digitalnatives.nl">
                         <div class="right-text">
-                            <p>Voor meer informatie over je foutmelding kan je terecht op https://www.didgitalnatives.nl/</p>
+                            <p>Voor meer informatie over je foutmelding kan je terecht op https://www.digitalnatives.nl/</p>
                             <p id="herstart">Herstart je browser nu</p>
                         </div>
                     </div>

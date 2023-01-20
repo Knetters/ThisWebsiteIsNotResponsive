@@ -23,6 +23,9 @@ var numbers = document.getElementById("numbers");
 
 herstart.addEventListener("click", moveOverlay)
 
+// Buttons kunnen beter een a tag
+// Camel case ipv snake case
+
 // Buttons
 const action_btn = document.getElementById("action-btn");
 const info_btn = document.getElementById("info-btn");
