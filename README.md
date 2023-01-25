@@ -21,7 +21,7 @@ Dit is een website die voor de normale gebruiker niet toegankelijk is. Voor mens
 
 _________________________________________________________________________________________________
 
-:postal_horn: De live versie is te vinden op: [https://knetters.github.io/ThisWebsiteIsNotResponsive/]
+:postal_horn: De live versie is te vinden op: [https://knetters.github.io/ThisWebsiteIsNotResponsive/](https://knetters.github.io/ThisWebsiteIsNotResponsive/)
 
 _________________________________________________________________________________________________
 
